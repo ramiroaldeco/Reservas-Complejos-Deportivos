@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reserva confirmada</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0fff0;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #00aa55;
+    }
+    p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>¡Tu pago fue exitoso! 🎉</h1>
+  <p>Estamos registrando tu reserva...</p>
+
+  <script>
+    // Recuperar datos de la reserva guardados antes del pago
+    const clave = localStorage.getItem("reserva_clave");
+    const nombre = localStorage.getItem("reserva_nombre");
+    const telefono = localStorage.getItem("reserva_telefono");
+
+    if (clave && nombre && telefono) {
+      fetch("http://localhost:3000/guardarReserva", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ clave, nombre, telefono })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.ok) {
+          document.body.innerHTML += `<p style="color:green;"><strong>Reserva guardada correctamente ✅</strong></p>`;
+        } else {
+          document.body.innerHTML += `<p style="color:red;"><strong>Error al guardar la reserva ❌</strong></p>`;
+        }
+
+        // Limpiar localStorage para no duplicar reservas
+        localStorage.removeItem("reserva_clave");
+        localStorage.removeItem("reserva_nombre");
+        localStorage.removeItem("reserva_telefono");
+      })
+      .catch(() => {
+        document.body.innerHTML += `<p style="color:red;"><strong>Error al conectar con el servidor ❌</strong></p>`;
+      });
+    } else {
+      document.body.innerHTML += `<p style="color:red;"><strong>No se encontraron datos de reserva.</strong></p>`;
+    }
+  </script>
+</body>
+</html>
+
+

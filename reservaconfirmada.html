@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reserva Confirmada</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f0f8f5;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card h1 {
+      color: #00aa55;
+    }
+
+    .card p {
+      font-size: 18px;
+      margin: 15px 0;
+    }
+
+    .card button {
+      background-color: #00aa55;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .card button:hover {
+      background-color: #008a44;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>✅ ¡Reserva Confirmada!</h1>
+    <p>Gracias por tu pago. Tu turno ya fue reservado con éxito.</p>
+    <p>¡Te esperamos en la cancha! ⚽</p>
+    <button onclick="volverAlComplejo()">Volver al complejo</button>
+  </div>
+
+  <script>
+    function volverAlComplejo() {
+      const complejo = localStorage.getItem("complejo_reservado");
+      if (complejo) {
+        window.location.href = `frontend.html?complejo=${complejo}`;
+      } else {
+        window.location.href = "frontend.html";
+      }
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,103 @@
+{
+  "elbosque": {
+    "clave": "diego123",
+    "lat": -32.4312,
+    "lng": -63.7335,
+    "nombre": "Complejo El Bosque",
+    "ciudad": "Hernando, Córdoba",
+    "maps": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3368.024459650871!2d-63.733818149257836!3d-32.41850289707643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cdaf32637b6d07%3A0xeaa41e20997b094c!2sEl%20Bosque!5e0!3m2!1ses!2sar!4v1752160177917!5m2!1ses!2sar\" loading=\"lazy\"></iframe>",
+    "imagenes": [
+      "https://i.postimg.cc/W1yVtxTq/Whats-App-Image-2024-05-15-at-18-53-42.jpg",
+      "https://i.postimg.cc/J4JYjgNB/Whats-App-Image-2025-07-14-at-7-32-10-PM.jpg",
+      "https://i.postimg.cc/zB6pgS3j/Whats-App-Image-2025-07-14-at-19-32-22.jpg",
+      "https://i.postimg.cc/yxRjXgZz/Whats-App-Image-2025-07-14-at-19-32-32.jpg"
+    ],
+    "servicios": [
+      "Duchas",
+      "Vestuarios",
+      "Quincho",
+      "Parrilla",
+      "Wifi",
+      "Bar"
+    ],
+    "horarios": {
+      "Lunes": {
+        "desde": "18:00",
+        "hasta": "23:00"
+      },
+      "Martes": {
+        "desde": "18:00",
+        "hasta": "23:00"
+      },
+      "Miércoles": {
+        "desde": "16:00",
+        "hasta": "23:00"
+      },
+      "Jueves": {
+        "desde": "18:00",
+        "hasta": "23:00"
+      },
+      "Viernes": {
+        "desde": "18:00",
+        "hasta": "23:00"
+      },
+      "Sábado": {
+        "desde": "18:00",
+        "hasta": "23:00"
+      },
+      "Domingo": {
+        "desde": "18:00",
+        "hasta": "23:00"
+      }
+    },
+    "canchas": [
+      {
+        "nombre": "Futbol 7",
+        "precioTotal": "28000",
+        "precioPorJugador": "2000",
+        "jugadores": "14",
+        "senia": "100"
+      },
+      {
+        "nombre": "Futbol 5",
+        "precioTotal": "20000",
+        "precioPorJugador": "2000",
+        "jugadores": "10",
+        "senia": "2000"
+      }
+    ]
+  },
+  "lamasia": {
+    "clave": "masia456",
+    "lat": -32.432,
+    "lng": -63.73,
+    "nombre": "Complejo La Masía",
+    "ciudad": "Villa Maria, Córdoba",
+    "maps": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3368.014236874713!2d-63.730000000000004!3d-32.43200000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDI2JzI1LjIiUyA2M8KwNDMnNDguMCJX!5e0!3m2!1ses!2sar!4v1752243543435!5m2!1ses!2sar\" loading=\"lazy\"></iframe>",
+    "imagenes": [
+      "https://alquilatucancha-public.s3.sa-east-1.amazonaws.com/production/public/clubs/bg/masia-parana.jpeg?524314",
+      "https://media.lmneuquen.com/p/52a0b555c5acaf1a1a785afa1e933f64/adjuntos/195/imagenes/007/802/0007802815/770x0/smart/la-masiajpg.jpg"
+    ],
+    "servicios": [
+      "Quincho",
+      "Parrilla",
+      "Wifi"
+    ],
+ "canchas": [
+  {
+    "nombre": "Cancha Fútbol 7",
+    "precioTotal": "25200",
+    "precioPorJugador": "1800",
+    "jugadores": 14,
+    "senia": "2000"
+  },
+  {
+    "nombre": "Cancha Fútbol 6",
+    "precioTotal": "18000",
+    "precioPorJugador": "1800",
+    "jugadores": 10,
+    "senia": "1500"
+  }
+]
+  }
+}
